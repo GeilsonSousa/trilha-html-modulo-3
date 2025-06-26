@@ -4,41 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Ney Matogrosso - Biografia</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #111;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bar {
+            height: 4px;
+            background-color: #222;
+        }
+
+        .content {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .sidebar, .anchors {
+            width: 20%;
+        }
+
+        .main {
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .sidebar h2, .anchors h2, footer h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        .anchors ul, .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .anchors ul li, .sidebar ul li {
+            margin-bottom: 8px;
+        }
+
+        .anchors a, .sidebar a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .anchors a:hover, .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        article h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        article section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social img {
+            vertical-align: middle;
+            width: 24px;
+            margin-right: 5px;
+        }
+
+        a[target="_blank"] {
+            color: #0066cc;
+        }
+    </style>
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
+    <!-- Cabeçalho -->
+    <header class="logo">
+        <img src="Imagem ney matogrosso.jpeg" width="400" alt="Imagem do Ney Matogrosso">
+    </header>
 
-    <div class="bar"></div>
+    <nav class="bar"></nav>
 
+    <!-- Conteúdo principal -->
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
-
-        <div class="main">
-            
-        </div>
-
-        <div class="anchors">
+        <!-- Navegação por âncoras -->
+        <nav class="anchors" aria-label="Navegação do artigo">
             <h2>Neste Artigo</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#carreira">Carreira</a></li>
+                <li><a href="#legado">Legado e Influência</a></li>
             </ul>
+        </nav>
+
+        <!-- Artigo principal -->
+        <main class="main">
+            <article>
+                <h1>Ney Matogrosso</h1>
+
+                <section id="biografia">
+                    <h2>Biografia</h2>
+                    <p>Ney de Souza Pereira, mais conhecido como <strong>Ney Matogrosso</strong>, nasceu em Bela Vista (MS) no dia 1º de agosto de 1941. É um cantor, intérprete, dançarino, ator e diretor brasileiro.</p>
+                </section>
+
+                <section id="carreira">
+                    <h2>Carreira</h2>
+                    <p>Foi integrante da banda Secos & Molhados entre 1973 e 1974, destacando-se por sua performance e estética ousada. Após sair do grupo, iniciou sua carreira solo com o disco <em>Água do Céu - Pássaro</em> (1975).</p>
+                    <p>Ney é reconhecido por interpretar canções de grandes compositores brasileiros como Chico Buarque, Cartola, Rita Lee, Tom Jobim e outros, sempre com autenticidade e teatralidade marcantes.</p>
+                    <p>Em 1983, já acumulava dois Discos de Platina e dois de Ouro, com destaque para a canção <strong>Homem com H</strong> (1981).</p>
+                </section>
+
+                <section id="legado">
+                    <h2>Legado e Influência</h2>
+                    <p>Considerado pela revista <em>Rolling Stone</em> como uma das maiores vozes do Brasil, Ney também atuou no cinema e influenciou o comportamento masculino e a liberdade de expressão artística.</p>
+                    <p>Seu estilo cênico e figurinos exóticos abriram espaço para novas expressões culturais desde os anos 70. É tido como um verdadeiro <strong>showman</strong> por críticos e estudiosos da música popular brasileira.</p>
+                </section>
+            </article>
+        </main>
+
+        <!-- Barra lateral ( você pode usar para navegação extra ou categorias) -->
+        <aside class="sidebar">
+            <h2>Conteúdo Relacionado</h2>
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Secos_%26_Molhados" target="_blank">Secos & Molhados</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/M%C3%BAsica_popular_brasileira" target="_blank">MPB</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por Geilson Sousa</p>
+        <p>Linkedin:<a href="https://www.linkedin.com/in/geilsonsousapaulino/" target="_blank">Meu Linkedin</a></p>
+        <p>Data de criação: 01/10/2023</p>
+        <p>Referências: <a href="https://pt.wikipedia.org/wiki/Ney_Matogrosso" target="_blank">Wikipedia</a></p>
+        <p>Imagem: <a href="https://commons.wikimedia.org/wiki/File:Ney_Matogrosso_2019.jpg" target="_blank">Wikimedia Commons</a></p>
+        <p>Este site é uma homenagem ao artista e não tem fins lucrativos.</p>
+        <p>Para mais informações, visite a página oficial do artista.</p>
+        <div class="social">
+            <h2>Redes Sociais</h2>
+            <a href="https://www.instagram.com/neymatogrosso/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Ney Matogrosso">
+                Instagram do Ney Matogrosso
+            </a>
         </div>
-    </div>
+    </footer>
 
-    <div class="footer">
-
-    </div>
 </body>
 </html>
